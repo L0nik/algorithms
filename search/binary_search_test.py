@@ -18,9 +18,14 @@ class BinatySearchTest(unittest.TestCase):
         expected = None
         self.assertEqual(result, expected)
 
-    def test_binary_search_normal(self):
+    def test_binary_search_value_present(self):
         result = binary_search.solve([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 5)
         expected = 4
+        self.assertEqual(result, expected)
+
+    def test_binary_search_value_absent(self):
+        result = binary_search.solve([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], -5)
+        expected = None
         self.assertEqual(result, expected)
 
 
