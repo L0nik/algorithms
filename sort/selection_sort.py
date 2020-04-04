@@ -19,4 +19,5 @@ def sort(arr):
     return result
 
 res = sort([8, -2, 2, 1, 0, 9, 6, -4])
+res = sort([])
 print(res)
