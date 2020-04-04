@@ -1,4 +1,4 @@
-def solve(input_list, item):
+def search(input_list, item):
 
     low = 0
     high = len(input_list) - 1
@@ -15,5 +15,4 @@ def solve(input_list, item):
 
     return None
 
-#print(solve([1, 2, 3, 4], 4))
-print(solve([], 4))
+print(search([1, 2, 3, 4], 4))
