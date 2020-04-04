@@ -11,9 +11,12 @@ def find_smallest(arr):
 
 def sort(arr):
     result = []
-    
+
     for i in range(len(arr)):
         smallest = find_smallest(arr)
         result.append(arr.pop(smallest))
 
     return result
+
+res = sort([8, -2, 2, 1, 0, 9, 6, -4])
+print(res)
